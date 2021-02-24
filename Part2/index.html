@@ -9,10 +9,20 @@
 <body>
   <header><h1>Poker Cards</h1></header>
     <main>
-        <section><span>A</span><span>♦</span><span>A</span></section>
-        <section><span>A</span><span>♣</span><span>A</span></section>
-        <section><span>A</span><span>♥</span><span>A</span></section>
-        <section><span>A</span><span>♠</span><span>A</span></section>
+        <section class = "cards" id="diamonds"><span>A</span><span>♦</span><span>A</span></section>
+        <section class = "cards" id="clubs"><span>A</span><span>♣</span><span>A</span></section>
+        <section class = "cards" id="hearts"><span>A</span><span>♥</span><span>A</span></section>
+        <section class = "cards" id="spades"><span>A</span><span>♠</span><span>A</span></section>
     </main>
+    <select id="cardID">
+      <option value="diamonds">Ace of Diamonds</option>
+      <option value="clubs">Ace of Clubs</option>
+      <option value="hearts">Ace of Hearts</option>
+      <option value="spades">Ace of Spades</option>
+    </select>
+    <input type="text" id="cardStyle" placeholder="Card Color">
+    <button onclick="setCard()">Submit</button>
+    <button onclick="clearCards()">Clear Cards</button>
 </body>
+<script src="index.js"></script>
 </html>
